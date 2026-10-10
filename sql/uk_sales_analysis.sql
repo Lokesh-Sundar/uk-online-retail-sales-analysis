@@ -18,7 +18,7 @@ SELECT COUNT(*) FROM sales;
 
 SELECT * FROM sales LIMIT 10;
 
-SELECT COUNT(*) FROM sales WHERE InvoiceNo IS NULL
+SELECT COUNT(*) FROM sales WHERE InvoiceNo IS NULL;
 
 SELECT COUNT(*) FROM sales WHERE Description IS NULL OR Description = '';
 
@@ -139,16 +139,7 @@ SELECT SUM(Quantity * UnitPrice) AS TotalRevenue
 FROM sales
 WHERE Quantity > 0;
 
-# non-null values
-
-SELECT InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country,
-       (Quantity * UnitPrice) AS Revenue
-FROM sales
-WHERE Quantity > 0 
-  AND Description NOT IN ('DOTCOM POSTAGE', 'POSTAGE', 'Manual')
-  AND Description IS NOT NULL AND Description != '';
-  
-  
+    
 SELECT COUNT(*) FROM sales
 WHERE Quantity > 0 
   AND Description NOT IN ('DOTCOM POSTAGE', 'POSTAGE', 'Manual')
