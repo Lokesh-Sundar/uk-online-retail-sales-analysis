@@ -1,6 +1,6 @@
 # UK Online Retail Sales Analysis
 
-**Live dashboard:** [Tableau Public](https://public.tableau.com/app/profile/lokesh.sundar5144/viz/uk_sales_analysis/UKOnlineRetailSalesAnalysis_)
+**Live dashboard:** [Tableau Public](https://public.tableau.com/app/profile/lokesh.sundar5144/viz/uk_sales_analysis_17916382048480/UKOnlineRetailSalesAnalysis_)
 
 ![Dashboard](dashboard/dashboard.png)
 
